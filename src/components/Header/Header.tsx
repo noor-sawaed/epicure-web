@@ -6,8 +6,7 @@ import searchLogo from "../../Assets/search.svg"
 import cartLogo from "../../Assets/cart.svg"
 import { Badge, createTheme, ThemeProvider } from "@mui/material"
 
-
-const Header = () => {
+const Header = (props: any) => {
   const theme = createTheme({
     palette: {
       primary: {
@@ -22,15 +21,19 @@ const Header = () => {
   return (
     <div className="mainHeaderContainer">
       <div className="leftContainer">
-        <img className="logo" src={hamburberLogo} alt="ham" />
+        <img className="logo" src={hamburberLogo} alt="ham" onClick={props.openHmaburber}/>
       </div>
       <div className="middleContainer">
         <img className="biglogo" src={resturantLogo} alt="home" />
       </div>
       <div className="RightContainer">
-        
-        <img className="logo" src={searchLogo} alt="acc" />
-        <img className="logo" src={accountLogo} alt="logo" />
+        <img
+          className="logo"
+          src={searchLogo}
+          alt="search"
+          onClick={props.openSearch}
+        />
+        <img className="logo" src={accountLogo} alt="account" />
         <ThemeProvider theme={theme}>
           <Badge
             color="primary"
@@ -44,7 +47,6 @@ const Header = () => {
           </Badge>
         </ThemeProvider>
       </div>
-
     </div>
   )
 }

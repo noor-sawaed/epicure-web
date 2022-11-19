@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react"
 import XLogo from "../../Assets/x.svg"
 import searchLogo from "../../Assets/search.svg"
 import "./SearchBar.css"
-const SearchBar = () => {
+const SearchBar = (props:any) => {
 
   return (
     <div className="SearchBarTotal">
       <div className="searchDiv">
-        <img className="searchLogo" src={XLogo} alt="Xlogo" />
+        <img className="searchLogo" src={XLogo} alt="Xlogo" onClick={props.closeSearch}/>
         <label htmlFor="search" className="searchText">
           Search
         </label>
