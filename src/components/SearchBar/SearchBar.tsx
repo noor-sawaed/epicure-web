@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import XLogo from "../../Assets/x.svg"
-import searchLogo from "../../Assets/search.svg"
+import SearchDiv from "../SearchDiv/SearchDiv"
 import "./SearchBar.css"
 const SearchBar = (props:any) => {
 
@@ -12,14 +12,7 @@ const SearchBar = (props:any) => {
           Search
         </label>
       </div>
-      <div className="searchTextBar">
-        <img className="smallLogo" src={searchLogo} alt="Xlogo" />
-        <input
-          type="text"
-          className="searchTextInput"
-          placeholder="Search for restaurant cuisine, chef"
-        />
-      </div>
+      <SearchDiv/>
       <div className="results">
         {/* //TODO must  add results for search*/}
         <h3 className="searchLabel">Resturants:</h3>

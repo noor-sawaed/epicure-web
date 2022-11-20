@@ -7,34 +7,15 @@
     align-items: center;
 }
 
-.searchTextBar {
-    display: flex;
-    width: 90%;
-    height: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
-    border: 1px solid black;
-    border-radius: 5px;
-    align-items: center;
-    padding-right: 5px;
-    gap: 30px;
-}
+
 
 .searchText {
     display: flex;
     margin-left: auto;
     margin-right: auto;
 }
-.searchTextInput {
-    width: 90%;
-    border: none;
-}
-.smallLogo {
-    width: 15px;
-    height: 15px;
-    margin-left: 2%;
-}
+
+
 .searchLogo {
     width: 32px;
     height: 32px;

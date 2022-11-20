@@ -1,4 +1,8 @@
-.mainFooterContainer{
-    margin-top: 100%;
-    background-color:lightpink;
+.mainFooterContainer {
+    display: flex;
+    flex-direction: column;
+    bottom:0;
+}
+.FooterContent {
+    padding: 20px;
 }
