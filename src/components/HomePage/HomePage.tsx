@@ -10,6 +10,7 @@ import Cart from "../Cart/Cart"
 import PopularRestaurants from '../PopularRestaurant/PopularRestaurants'
 import SignatureDish from "../SignatureDish/SignatureDish"
 import SignatureIcons from "../SignatureIcons/SignatureIcons"
+import { AboutUs } from "../AboutUs/AboutUs"
 const HomePage = () => {
   const [searchBarStatus, setSearchBarStatus] = useState(false)
   const [HamburberStatus, setHamburberStatus] = useState(false)
@@ -80,6 +81,8 @@ const HomePage = () => {
       <PopularRestaurants/>
       <SignatureDish/>
       <SignatureIcons/>
+      <h1>Chef of the week</h1>
+      <AboutUs/>
       <Footer/>
     </MainHomePageContainer>
   )

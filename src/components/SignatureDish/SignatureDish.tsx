@@ -1,4 +1,3 @@
-import SignatureLogo from "../../Assets/Spicy.svg"
 import vectorLogo from "../../Assets/Vector.svg"
 import Dish from "../Dish/Dish"
 import {
@@ -19,7 +18,7 @@ const SignatureDish = () => {
       image:
         "https://github.com/noor-sawaed/epicure-web/blob/main/src/Assets/claro.png?raw=true",
       signatureLogo:
-        "https://github.com/noor-sawaed/epicure-web/blob/1a652b61b3d4e61f0119a94d577fc23b141a5097/src/Assets/logo.svg?raw=true",
+        "https://github.com/noor-sawaed/epicure-web/blob/00eeb9826288617ba89e30293e2b85586ffc0e92/src/Assets/Spicy.svg?raw=true",
       price: 88
     },
     {
@@ -29,8 +28,28 @@ const SignatureDish = () => {
       image:
         "https://github.com/noor-sawaed/epicure-web/blob/main/src/Assets/claro.png?raw=true",
       signatureLogo:
-        "https://github.com/noor-sawaed/epicure-web/blob/1a652b61b3d4e61f0119a94d577fc23b141a5097/src/Assets/logo.svg?raw=true",
-      price: 88
+        "https://github.com/noor-sawaed/epicure-web/blob/00eeb9826288617ba89e30293e2b85586ffc0e92/src/Assets/Vegan.svg?raw=true",
+      price: 52
+    },
+    {
+      name: "shmoal",
+      description:
+        "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
+      image:
+        "https://github.com/noor-sawaed/epicure-web/blob/main/src/Assets/claro.png?raw=true",
+      signatureLogo:
+        "https://github.com/noor-sawaed/epicure-web/blob/00eeb9826288617ba89e30293e2b85586ffc0e92/src/Assets/Spicy.svg?raw=true",
+      price: 124
+    },
+    {
+      name: "shmoal",
+      description:
+        "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
+      image:
+        "https://github.com/noor-sawaed/epicure-web/blob/main/src/Assets/claro.png?raw=true",
+      signatureLogo: 
+        "https://github.com/noor-sawaed/epicure-web/blob/00eeb9826288617ba89e30293e2b85586ffc0e92/src/Assets/Vegan.svg?raw=true",
+      price: 30
     },
     {
       name: "shmoal",
@@ -40,27 +59,7 @@ const SignatureDish = () => {
         "https://github.com/noor-sawaed/epicure-web/blob/main/src/Assets/claro.png?raw=true",
       signatureLogo:
         "https://github.com/noor-sawaed/epicure-web/blob/1a652b61b3d4e61f0119a94d577fc23b141a5097/src/Assets/logo.svg?raw=true",
-      price: 88
-    },
-    {
-      name: "shmoal",
-      description:
-        "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
-      image:
-        "https://github.com/noor-sawaed/epicure-web/blob/main/src/Assets/claro.png?raw=true",
-      signatureLogo:
-        "https://github.com/noor-sawaed/epicure-web/blob/1a652b61b3d4e61f0119a94d577fc23b141a5097/src/Assets/logo.svg?raw=true",
-      price: 88
-    },
-    {
-      name: "shmoal",
-      description:
-        "Shrimps, Glass Noodles, Kemiri Nuts, Shallots, Lemon Grass, Magic Chili Brown Coconut",
-      image:
-        "https://github.com/noor-sawaed/epicure-web/blob/main/src/Assets/claro.png?raw=true",
-      signatureLogo:
-        "https://github.com/noor-sawaed/epicure-web/blob/1a652b61b3d4e61f0119a94d577fc23b141a5097/src/Assets/logo.svg?raw=true",
-      price: 88
+      price: 92
     }
   ]
 
