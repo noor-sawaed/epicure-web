@@ -1,12 +1,12 @@
 import React from 'react'
-import "./Footer.css"
+import { FooterContentButton, MainFooterContainer } from "./FooterStyles"
 const Footer = () => {
   return (
-    <div className="mainFooterContainer">
-      <button className="hamburberButton FooterContent">Contact Us</button>
-      <button className="hamburberButton FooterContent">Term of Use</button>
-      <button className="hamburberButton FooterContent">Privacy Policy</button>
-    </div>
+    <MainFooterContainer>
+      <FooterContentButton>Contact Us</FooterContentButton>
+      <FooterContentButton>Term of Use</FooterContentButton>
+      <FooterContentButton>Privacy Policy</FooterContentButton>
+    </MainFooterContainer>
   )
 }
 

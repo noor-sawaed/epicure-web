@@ -1,24 +1,29 @@
 import React from "react"
 import XLogo from "../../Assets/x.svg"
 import Footer from "../Footer/Footer"
-import "./Hamburber.css"
+import {
+  BottomHamburberDiv,
+  HamburberButton,
+  MainHamburberContainer,
+  ExitLogoImg,
+  TopHamburberDiv
+} from "./HamburberStyles"
 const Hamberbur = (props: any) => {
   return (
-    <div className="HamburberDiv">
-      <img
-        className="searchLogo"
+    <MainHamburberContainer>
+      <ExitLogoImg
         src={XLogo}
         alt="Xlogo"
         onClick={props.closeHamburber}
       />
-      <div className="topHamburber">
-        <button className="hamburberButton">Restaurants</button>
-        <button className="hamburberButton">Chefs</button>
-      </div>
-      <div className="bottomHamburber">
+      <TopHamburberDiv>
+        <HamburberButton>Restaurants</HamburberButton>
+        <HamburberButton>Chefs</HamburberButton>
+      </TopHamburberDiv>
+      <BottomHamburberDiv>
         <Footer />
-      </div>
-    </div>
+      </BottomHamburberDiv>
+    </MainHamburberContainer>
   )
 }
 

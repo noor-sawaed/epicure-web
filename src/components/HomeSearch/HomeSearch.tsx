@@ -1,14 +1,14 @@
 import React from 'react'
 import SearchDiv from '../SearchDiv/SearchDiv'
-import "./HomeSearch.css"
+import { HomeSearchContent, MainHomeSearchContainer ,HomeSearchHeader} from './HomeSearchStyles'
 const HomeSearch = () => {
   return (
-    <div className="MainHomeSearchContainer">
-        <div className="HomeSearchContent">
-            <label className="homeSearchHeader">Epicure works with the top<br/>chef restaurants in Tel Aviv</label>
+    <MainHomeSearchContainer>
+        <HomeSearchContent>
+            <HomeSearchHeader>Epicure works with the top<br/>chef restaurants in Tel Aviv</HomeSearchHeader>
             <SearchDiv/>
-        </div>
-    </div>
+        </HomeSearchContent>
+    </MainHomeSearchContainer>
   )
 }
 

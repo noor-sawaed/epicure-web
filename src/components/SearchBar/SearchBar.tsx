@@ -1,38 +1,34 @@
-import React, { useEffect, useState } from "react"
 import XLogo from "../../Assets/x.svg"
 import SearchDiv from "../SearchDiv/SearchDiv"
-import "./SearchBar.css"
-const SearchBar = (props:any) => {
-
+import {
+  MainSearchBarContainer,
+  TopSearchHeader,
+  SearchLogo,
+  SearchTextTitle,
+  SearchResults,
+  SearchLabelResults,
+  SearchLabel
+} from "./SearchBarStyles"
+const SearchBar = (props: any) => {
   return (
-    <div className="SearchBarTotal">
-      <div className="searchDiv">
-        <img className="searchLogo" src={XLogo} alt="Xlogo" onClick={props.closeSearch}/>
-        <label htmlFor="search" className="searchText">
-          Search
-        </label>
-      </div>
-      <SearchDiv/>
-      <div className="results">
+    <MainSearchBarContainer>
+      <TopSearchHeader>
+        <SearchLogo src={XLogo} alt="Xlogo" onClick={props.closeSearch} />
+        <SearchTextTitle htmlFor="search">Search</SearchTextTitle>
+      </TopSearchHeader>
+      <SearchDiv />
+      <SearchResults>
         {/* //TODO must  add results for search*/}
-        <h3 className="searchLabel">Resturants:</h3>
+        <SearchLabel>Resturants:</SearchLabel>
         {/* <Link to="/"></Link> */}
-        <label htmlFor="" className="searchedresult">
-          Tiger lau
-        </label>
-        <h3 className="searchLabel">Dishes:</h3>
-        <label htmlFor="" className="searchedresult">
-          Pizza
-        </label>
-        <label htmlFor="" className="searchedresult">
-          hazia pato'n
-        </label>
-        <h3 className="searchLabel">Cusine:</h3>
-        <label htmlFor="" className="searchedresult">
-          Thai
-        </label>
-      </div>
-    </div>
+        <SearchLabelResults htmlFor="">Tiger lau</SearchLabelResults>
+        <SearchLabel>Dishes:</SearchLabel>
+        <SearchLabelResults htmlFor="">Pizza</SearchLabelResults>
+        <SearchLabelResults htmlFor="">hazia pato'n</SearchLabelResults>
+        <SearchLabel>Cusine:</SearchLabel>
+        <SearchLabelResults htmlFor="">Thai</SearchLabelResults>
+      </SearchResults>
+    </MainSearchBarContainer>
   )
 }
 

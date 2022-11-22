@@ -1,14 +1,12 @@
-.HamburberDiv{
-    margin:3%;
+import styled from 'styled-components';
+
+export const MainFooterContainer = styled.div`
     display: flex;
     flex-direction: column;
-}
-.topHamburber{
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid lightgray;
-}
-.hamburberButton{
+    bottom:0;
+`;
+
+export const FooterContentButton = styled.button`
     display: flex;
     background-color:rgba(255, 255, 255, 0.88);
     border:none;
@@ -21,8 +19,5 @@
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 1.92px;
-    /* background-color:pink; */
-}
-.bottomHamburber{
-    margin-top: 0px;
-}
+`;
+

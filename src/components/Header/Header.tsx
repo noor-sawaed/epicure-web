@@ -1,4 +1,11 @@
-import "./Header.css"
+import {
+  HeaderBigLogo,
+  HeaderLogo,
+  LeftHeaderContainer,
+  MainHeaderContainer,
+  MiddleHeaderContainer,
+  RightHeaderContainer
+} from "./HeaderStyles"
 import resturantLogo from "../../Assets/logo.svg"
 import accountLogo from "../../Assets/account.svg"
 import hamburberLogo from "../../Assets/hamburber.svg"
@@ -19,21 +26,20 @@ const Header = (props: any) => {
   })
 
   return (
-    <div className="mainHeaderContainer">
-      <div className="leftContainer">
-        <img className="logo" src={hamburberLogo} alt="ham" onClick={props.openHmaburber}/>
-      </div>
-      <div className="middleContainer">
-        <img className="biglogo" src={resturantLogo} alt="home" />
-      </div>
-      <div className="RightContainer">
-        <img
-          className="logo"
-          src={searchLogo}
-          alt="search"
-          onClick={props.openSearch}
+    <MainHeaderContainer>
+      <LeftHeaderContainer>
+        <HeaderLogo
+          src={hamburberLogo}
+          alt="ham"
+          onClick={props.openHmaburber}
         />
-        <img className="logo" src={accountLogo} alt="account" />
+      </LeftHeaderContainer>
+      <MiddleHeaderContainer>
+        <HeaderBigLogo src={resturantLogo} alt="home" />
+      </MiddleHeaderContainer>
+      <RightHeaderContainer>
+        <HeaderLogo src={searchLogo} alt="search" onClick={props.openSearch} />
+        <HeaderLogo src={accountLogo} alt="account" />
         <ThemeProvider theme={theme}>
           <Badge
             color="primary"
@@ -43,11 +49,11 @@ const Header = (props: any) => {
               horizontal: "left"
             }}
           >
-            <img className="logo" src={cartLogo} alt="logo" />
+            <HeaderLogo src={cartLogo} alt="logo" />
           </Badge>
         </ThemeProvider>
-      </div>
-    </div>
+      </RightHeaderContainer>
+    </MainHeaderContainer>
   )
 }
 

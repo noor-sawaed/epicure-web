@@ -1,18 +1,23 @@
-import React from "react"
-import "./Restaurant.css"
+import {
+  MainRestaurantContainer,
+  RestaurantImage,
+  RestaurantLocationLabel,
+  RestaurantNameLabel,
+  RestaurantWordsContainer
+} from "./RestaurantsStyles"
 const Restaurant = (props: {
   name: string
   image: string
   location: string
 }) => {
   return (
-    <div className="RestaurantContainer">
-      <img alt="" src={props.image} className="RestaurantImage" />
-      <div className="RestaurantWords">
-        <label className="RestaurantName">{props.name}</label>
-        <label className="RestaurantLocation">{props.location}</label>
-      </div>
-    </div>
+    <MainRestaurantContainer>
+      <RestaurantImage alt="" src={props.image} />
+      <RestaurantWordsContainer>
+        <RestaurantNameLabel>{props.name}</RestaurantNameLabel>
+        <RestaurantLocationLabel>{props.location}</RestaurantLocationLabel>
+      </RestaurantWordsContainer>
+    </MainRestaurantContainer>
   )
 }
 

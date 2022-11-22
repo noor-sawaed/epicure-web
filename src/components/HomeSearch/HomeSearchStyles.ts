@@ -1,5 +1,7 @@
-.MainHomeSearchContainer {
-    display: flex;
+import styled from 'styled-components';
+
+export const MainHomeSearchContainer = styled.div`
+display: flex;
     flex-direction: column;
     align-items: center;
     height: 273px;
@@ -7,14 +9,12 @@
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
-    background-image: url("../../Assets/hompePage_img.png");
+    background-image: url("https://github.com/noor-sawaed/epicure-web/blob/99159873c30b15219780a5941e5eca872263f44c/src/Assets/hompePage_img.png?raw=true");
     background-size: cover;
-    /* width: 100%; */
-    /* height: 100%; */
-    /* object-fit: cover; */
+    background-position:75% 25%  ;
+`;
 
-}
-.HomeSearchContent {
+export const HomeSearchContent = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,5 +26,8 @@
     letter-spacing: 1.97px;
     height: 144px;
     background-color: rgba(255, 255, 255, 0.88);
-    /* justify-content: center; */
-}
+    
+`;
+export const HomeSearchHeader = styled.label`
+
+`

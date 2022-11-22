@@ -1,12 +1,11 @@
-
-import "./App.css"
+import { MainContainer } from "./AppStyle"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import HomePage from "./components/HomePage/HomePage"
 
 function App() {
   
   return (
-    <div className="mainContainer" >
+    <MainContainer  >
       {/* <Outlet /> */}
       <BrowserRouter>
       <Routes>
@@ -14,7 +13,7 @@ function App() {
         {/* <Route path="/details" element={<Details />} /> */}
       </Routes>
     </BrowserRouter>
-    </div>
+    </MainContainer>
   )
 }
 

@@ -1,4 +1,6 @@
-.searchTextBar {
+import styled from 'styled-components';
+
+export const SearchTextBarContainer = styled.div`
     display: flex;
     width: 90%;
     height: 30px;
@@ -9,18 +11,17 @@
     border-radius: 5px;
     align-items: center;
     padding-right: 5px;
-    gap: 30px;
-}
+    gap: 30px;  
+`;
 
-.smallLogo {
+export const SmallSearchLogo = styled.img`
     width: 15px;
     height: 15px;
     margin-left: 2%;
-}
-.searchTextInput {
+`
+export const SearchTextInput = styled.input`
     width: 90%;
     border: none;
-    /* background-color: rgba(255, 255, 255, 0.88); */
     background-color: transparent;
     font-family: 'Helvetica Neue';
     font-style: normal;
@@ -28,4 +29,5 @@
     font-size: 12px;
     line-height: 15px;
     letter-spacing: 1.29px;
-}
+`;
+

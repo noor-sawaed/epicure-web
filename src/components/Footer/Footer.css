@@ -1,8 +1,0 @@
-.mainFooterContainer {
-    display: flex;
-    flex-direction: column;
-    bottom:0;
-}
-.FooterContent {
-    padding: 20px;
-}

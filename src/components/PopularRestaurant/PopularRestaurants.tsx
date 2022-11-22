@@ -1,46 +1,59 @@
 import React from "react"
 import Restaurant from "../Restaurant/Restaurant"
-import "./PopularRestaurants.css"
-
+import vectorLogo from "../../Assets/Vector.svg"
+import {
+  BottomPopularAllRestaurantsLink,
+  LinkToAllRestaurants,
+  MainPopularRestaurantsDiv,
+  MainPopularRestaurantsHeader,
+  PopularRestaurantsCollection,
+  VectorLogo
+} from "./PopularRestaurantsStyles"
 const PopularRestaurants = () => {
   const rests = [
     {
       name: "shmoal",
       location: "bear shevaa",
-      image: "epicure-web/src/Assets/claro.png"
+      image:
+        "https://github.com/noor-sawaed/epicure-web/blob/main/src/Assets/claro.png?raw=true"
     },
     {
       name: "pipaya",
       location: "karmeil",
-      image: "https://github.com/noor-sawaed/epicure-web/blob/main/src/Assets/claro.png"
+      image:
+        "https://github.com/noor-sawaed/epicure-web/blob/main/src/Assets/claro.png?raw=true"
     },
     {
       name: "abu shaker",
       location: "deir-el assad",
-      image: "../../Assets/claro.png"
+      image:
+        "https://github.com/noor-sawaed/epicure-web/blob/main/src/Assets/claro.png?raw=true"
     },
     {
       name: "shmoal",
       location: "bear shevaa",
-      image: "../../Assets/claro.png"
+      image:
+        "https://github.com/noor-sawaed/epicure-web/blob/main/src/Assets/claro.png?raw=true"
     },
     {
       name: "pipaya",
       location: "karmeil",
-      image: "../../Assets/claro.png"
+      image:
+        "https://github.com/noor-sawaed/epicure-web/blob/main/src/Assets/claro.png?raw=true"
     },
     {
       name: "abu shaker",
       location: "deir-el assad",
-      image: "../../Assets/claro.png"
+      image:
+        "https://github.com/noor-sawaed/epicure-web/blob/main/src/Assets/claro.png?raw=true"
     }
   ]
   return (
-    <div className="mainPopularRestaurantsDiv">
-      <label className="mainPopularRestaurantsHeader">
+    <MainPopularRestaurantsDiv>
+      <MainPopularRestaurantsHeader>
         popular restaurant in epicure:
-      </label>
-      <div className="PopularRestaurantsCollection">
+      </MainPopularRestaurantsHeader>
+      <PopularRestaurantsCollection>
         {rests.map((restaurant) => (
           <Restaurant
             name={restaurant.name}
@@ -48,8 +61,16 @@ const PopularRestaurants = () => {
             location={restaurant.location}
           />
         ))}
-      </div>
-    </div>
+      </PopularRestaurantsCollection>
+      <BottomPopularAllRestaurantsLink>
+        <LinkToAllRestaurants>All Restaurants</LinkToAllRestaurants>
+        <VectorLogo
+          src={vectorLogo}
+          alt="Victor"
+          // onClick={}
+        />
+      </BottomPopularAllRestaurantsLink>
+    </MainPopularRestaurantsDiv>
   )
 }
 
