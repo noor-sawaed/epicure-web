@@ -49,7 +49,7 @@ const Header = (props: any) => {
               horizontal: "left"
             }}
           >
-            <HeaderLogo src={cartLogo} alt="logo" />
+            <HeaderLogo src={cartLogo} alt="logo" onClick={props.siwtchCart} />
           </Badge>
         </ThemeProvider>
       </RightHeaderContainer>

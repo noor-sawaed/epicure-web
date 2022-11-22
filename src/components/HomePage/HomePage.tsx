@@ -6,18 +6,21 @@ import { Dialog } from "@mui/material"
 import Hamburber from "../Hamburber/Hamberbur"
 import SearchBar from "../SearchBar/SearchBar"
 import HomeSearch from "../HomeSearch/HomeSearch"
+import Cart from "../Cart/Cart"
 import PopularRestaurants from '../PopularRestaurant/PopularRestaurants'
+import SignatureDish from "../SignatureDish/SignatureDish"
+import SignatureIcons from "../SignatureIcons/SignatureIcons"
 const HomePage = () => {
   const [searchBarStatus, setSearchBarStatus] = useState(false)
   const [HamburberStatus, setHamburberStatus] = useState(false)
   const [CartStatus,setCartStatus] = useState(false)
 
-  const handleCloseCart = () => {
-    setCartStatus(false);
+  const handleSwitchCartState = () => {
+    setCartStatus(!CartStatus);
   }
 
-  const handleOpenCart = () => {
-    setCartStatus(true);
+  const handleCloseCart = () => {
+    setCartStatus(false);
   }
 
   const handleCloseHamburber = () => {
@@ -37,7 +40,7 @@ const HomePage = () => {
   
   return (
     <MainHomePageContainer>
-      <Header openSearch={handleOpenSearchBar} openHmaburber={handleOpenHamburber}/>
+      <Header openSearch={handleOpenSearchBar} openHmaburber={handleOpenHamburber} siwtchCart={handleSwitchCartState}/>
         <Dialog
         open={searchBarStatus}
         onClose={handleCloseSearchBar}
@@ -60,20 +63,23 @@ const HomePage = () => {
       >
         <Hamburber closeHamburber={handleCloseHamburber}/>
       </Dialog>
-      {/* <Dialog
+      <Dialog
         open={CartStatus}
         onClose={handleCloseCart}
-        style={{height:"376px"}}
+        style={{height:"280px"}}
         scroll="body"
         fullScreen={true}
         aria-labelledby="scroll-dialog-title"
         aria-describedby="scroll-dialog-description"
-      > */}
-        {/* <Hamburber closeHamburber={handleCloseHamburber}/> */}
+      >
+      <Header openSearch={handleOpenSearchBar} openHmaburber={handleOpenHamburber} siwtchCart={handleSwitchCartState}/>
+        <Cart siwtchCart={handleSwitchCartState}/>
         {/* //? Adding Cart Component with dialog */}
-      {/* </Dialog> */}
+      </Dialog>
       <HomeSearch/>
       <PopularRestaurants/>
+      <SignatureDish/>
+      <SignatureIcons/>
       <Footer/>
     </MainHomePageContainer>
   )
