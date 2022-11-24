@@ -79,7 +79,7 @@ const SignatureDish = () => {
       </SignatureDishCollection>
       <BottomSignatureDishesLink>
         <LinkToAllDishes>
-          All Dishes
+          All Restaurants
           <VectorLogo
             src={vectorLogo}
             alt="Victor"
