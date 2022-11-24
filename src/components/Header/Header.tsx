@@ -39,7 +39,7 @@ const Header = (props: any) => {
       </MiddleHeaderContainer>
       <RightHeaderContainer>
         <HeaderLogo src={searchLogo} alt="search" onClick={props.openSearch} />
-        <HeaderLogo src={accountLogo} alt="account" />
+        <HeaderLogo src={accountLogo} alt="account" onClick={props.openSignIn} />
         <ThemeProvider theme={theme}>
           <Badge
             color="primary"

@@ -1,18 +1,11 @@
 import { MainContainer } from "./AppStyle"
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import HomePage from "./components/HomePage/HomePage"
+import Routing from "./components/Routing/Routing"
 
 function App() {
   
   return (
     <MainContainer  >
-      {/* <Outlet /> */}
-      <BrowserRouter>
-      <Routes>
-        <Route index element={<HomePage />} />
-        {/* <Route path="/details" element={<Details />} /> */}
-      </Routes>
-    </BrowserRouter>
+      <Routing />
     </MainContainer>
   )
 }
