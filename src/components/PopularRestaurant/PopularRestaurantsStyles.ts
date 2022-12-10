@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const MainPopularRestaurantsDiv = styled.div`
@@ -54,4 +55,9 @@ export const VectorLogo = styled.img`
     height: 20px;
     align-self: center;
     padding-left: 5px;
+`;
+
+export const Linkto = styled(Link)`
+    text-decoration: none;
+    color: #000000;
 `;

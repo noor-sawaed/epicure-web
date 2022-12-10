@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import styled from "styled-components";
 
 export const MainHeaderContainer = styled.div`
@@ -18,13 +19,19 @@ export const HeaderLogo = styled.img`
     width: 32px;
     height: 32px;
     padding-right: 10px;
-`
+`;
 
-export const HeaderBigLogo = styled.img`
+export const Linkto = styled(Link)`
     display: block;
     margin-left:auto;
     margin-right:auto;
     position: absolute;
+`;
+
+
+
+export const HeaderBigLogo = styled.img`
+    
     width: 40px;
     height: 40px;
 `

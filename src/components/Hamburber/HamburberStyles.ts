@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const MainHamburberContainer = styled.div`
@@ -34,3 +35,6 @@ export const ExitLogoImg = styled.img`
     height: 32px;
 `;
 
+export const Linkto = styled(Link)`
+    text-decoration: none;
+`;

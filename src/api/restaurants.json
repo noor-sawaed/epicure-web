@@ -1,0 +1,192 @@
+[
+    {
+        "id": 1,
+        "name": "Claro",
+        "image": "https://cdn.thespaces.com/wp-content/uploads/2018/12/claro-photo-by-afik-gbay-2-%D7%A2%D7%95%D7%AA%D7%A7.jpg",
+        "Chef": "Yuval Ben Neriah",
+        "dateAdded": 975771728000,
+        "visits": 102,
+        "workHours": {
+            "Sunday": {
+                "open": "08:00",
+                "close": "19:30"
+            },
+            "Monday": {
+                "open": "09:00",
+                "close": "20:30"
+            },
+            "Tuesday": {
+                "open": "08:00",
+                "close": "19:30"
+            },
+            "Wednesday": {
+                "open": "08:00",
+                "close": "19:30"
+            },
+            "Thursday": {
+                "open": "08:00",
+                "close": "19:30"
+            },
+            "Friday": {
+                "open": "08:00",
+                "close": "19:30"
+            },
+            "Saturday": {
+                "open": "08:00",
+                "close": "19:30"
+            }
+        }
+    },
+    {
+        "id": 2,
+        "name": "North Abraxas",
+        "image": "https://lp-cms-production.imgix.net/features/2019/01/taizu-tel-aviv-f075ead71820.jpg",
+        "Chef": "Eyal Shani",
+        "dateAdded": 1291304528000,
+        "visits": 938,
+        "workHours": {
+            "Sunday": {
+                "open": "08:00",
+                "close": "19:30"
+            },
+            "Monday": {
+                "open": "09:00",
+                "close": "15:30"
+            },
+            "Tuesday": {
+                "open": "08:00",
+                "close": "19:30"
+            },
+            "Wednesday": {
+                "open": "20:00",
+                "close": "00:00"
+            },
+            "Thursday": {
+                "open": "08:00",
+                "close": "19:30"
+            },
+            "Friday": {
+                "open": "08:00",
+                "close": "19:30"
+            },
+            "Saturday": {
+                "open": "08:00",
+                "close": "19:30"
+            }
+        }
+    },
+    {
+        "id": 3,
+        "name": "fissshh",
+        "image": "https://www.floornature.com/media/photos/38/16731/01_a_RESTAURANT_043_full.jpg",
+        "Chef": "Ana Amari",
+        "dateAdded": 1606923728000,
+        "visits": 1543,
+        "workHours": {
+            "Sunday": {
+                "open": "08:00",
+                "close": "19:30"
+            },
+            "Monday": {
+                "open": "09:00",
+                "close": "15:30"
+            },
+            "Tuesday": {
+                "open": "08:00",
+                "close": "19:30"
+            },
+            "Wednesday": {
+                "open": "19:00",
+                "close": "19:30"
+            },
+            "Thursday": {
+                "open": "08:00",
+                "close": "19:30"
+            },
+            "Friday": {
+                "open": "08:00",
+                "close": "19:30"
+            },
+            "Saturday": {
+                "open": "08:00",
+                "close": "19:30"
+            }
+        }
+    },
+    {
+        "id": 4,
+        "name": "Pastel",
+        "image": "https://telaveat.com/wp-content/uploads/2020/09/Malka.jpg",
+        "Chef": "Jack Morison",
+        "dateAdded": 1133538128000,
+        "visits": 133,
+        "workHours": {
+            "Sunday": {
+                "open": "08:00",
+                "close": "19:30"
+            },
+            "Monday": {
+                "open": "09:00",
+                "close": "19:50"
+            },
+            "Tuesday": {
+                "open": "08:00",
+                "close": "19:30"
+            },
+            "Wednesday": {
+                "open": "19:00",
+                "close": "19:30"
+            },
+            "Thursday": {
+                "open": "08:00",
+                "close": "19:30"
+            },
+            "Friday": {
+                "open": "08:00",
+                "close": "19:30"
+            },
+            "Saturday": {
+                "open": "08:00",
+                "close": "19:30"
+            }
+        }
+    },
+    {
+        "id": 5,
+        "name": "COME 2 DINE",
+        "image": "https://s7d1.scene7.com/is/image/marriotts7prod/si-tlvsi-surfside-4-27724:Wide-Hor?wid=1336&fit=constrain",
+        "Chef": "TorbJörn Lindholm",
+        "dateAdded": 975771738000,
+        "visits": 306,
+        "workHours": {
+            "Sunday": {
+                "open": "08:00",
+                "close": "19:30"
+            },
+            "Monday": {
+                "open": "09:00",
+                "close": "20:30"
+            },
+            "Tuesday": {
+                "open": "08:00",
+                "close": "19:30"
+            },
+            "Wednesday": {
+                "open": "08:00",
+                "close": "19:30"
+            },
+            "Thursday": {
+                "open": "08:00",
+                "close": "19:30"
+            },
+            "Friday": {
+                "open": "08:00",
+                "close": "19:30"
+            },
+            "Saturday": {
+                "open": "08:00",
+                "close": "19:30"
+            }
+        }
+    }
+]

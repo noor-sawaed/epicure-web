@@ -36,7 +36,12 @@ export const DishDescriptionLabel = styled.label`
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 1.97px;
+    height:100px;
+    display: inline-block;
+    overflow-y: auto;
+    overflow-x: hidden;
 `;
+
 export const DishPriceLabel = styled.label`
     font-family: 'Helvetica Neue';
     font-style: normal;

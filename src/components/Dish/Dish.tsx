@@ -23,7 +23,7 @@ const Dish = (props: {
         <DishNameLabel>{props.name}</DishNameLabel>
         <DishDescriptionLabel>{props.description}</DishDescriptionLabel>
         <DishSignatureImage src={props.signatureLogo} />
-        <DishPriceLabel>${props.price}</DishPriceLabel>
+        <DishPriceLabel>₪{props.price}</DishPriceLabel>
       </DishWordsContainer>
     </MainDishContainer>
   )

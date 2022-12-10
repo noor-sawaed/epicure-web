@@ -7,6 +7,7 @@ export const MainCartContainer = styled.div`
     height:220px;
     align-items: center;
     gap: 15px;
+    /* margin-top:60px; */
 `
 export const EmptyCartBigLogo = styled.img`
     width: 45px;

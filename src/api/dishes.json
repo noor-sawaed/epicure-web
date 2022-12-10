@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "name": "Popina",
+        "price": 86,
+        "image": "https://media.timeout.com/images/103512048/1372/1029/image.jpg",
+        "description": "You’ll find options like the sea bream fillet and forbidden rice risotto, with king oyster mushrooms stuffed with parsley, tomato and parmesan with a leek fondue, or the seafood pizza with goat cheese cream.",
+        "type": "Breakfast",
+        "signatureLogo": "https://github.com/noor-sawaed/epicure-web/blob/00eeb9826288617ba89e30293e2b85586ffc0e92/src/Assets/Vegan.svg?raw=true",
+        "restaurantId": 1
+    },
+    {
+        "id": 2,
+        "name": "Alina",
+        "price": 22,
+        "image": "https://media.timeout.com/images/105166204/1372/1029/image.jpg",
+        "description": "The newest culinary addition is Alena, serving up local cuisine with influences from the Mediterranean.",
+        "type": "Dinner",
+        "signatureLogo": "https://github.com/noor-sawaed/epicure-web/blob/00eeb9826288617ba89e30293e2b85586ffc0e92/src/Assets/Spicy.svg?raw=true",
+        "restaurantId": 1
+    },
+    {
+        "id": 3,
+        "name": "Taizu",
+        "price": 49,
+        "image": "https://media.timeout.com/images/103512284/1372/772/image.jpg",
+        "description": "A fusion of savory, sweet and unique ingredients like curry, saffron and other surprisingly harmonious spices.",
+        "type": "Breakfast",
+        "signatureLogo": "https://github.com/noor-sawaed/epicure-web/blob/00eeb9826288617ba89e30293e2b85586ffc0e92/src/Assets/Vegitarian.svg?raw=true",
+        "restaurantId": 1
+    },
+    {
+        "id": 4,
+        "name": "Dinings",
+        "price": 72,
+        "image": "https://media.timeout.com/images/105545435/1372/1029/image.jpg",
+        "description": "With an incredible menu of sushi, bento boxes and nibbles that are wildly creative.",
+        "type": "Dinner",
+        "signatureLogo": "https://github.com/noor-sawaed/epicure-web/blob/00eeb9826288617ba89e30293e2b85586ffc0e92/src/Assets/Spicy.svg?raw=true",
+        "restaurantId": 1
+    },
+    {
+        "id": 5,
+        "name": "Dok",
+        "price": 27,
+        "image": "https://media.timeout.com/images/105545434/1372/1029/image.jpg",
+        "description": "Showcasing olive oil, fresh fish, meat and a fabulous selection of wine, the only rule here is that it must be from Israel.",
+        "type": "Dinner",
+        "signatureLogo": "https://github.com/noor-sawaed/epicure-web/blob/00eeb9826288617ba89e30293e2b85586ffc0e92/src/Assets/Vegitarian.svg?raw=true",
+        "restaurantId": 1
+    },
+    {
+        "id": 6,
+        "name": "OCD",
+        "price": 88,
+        "image": "https://media.timeout.com/images/103512672/1372/1029/image.jpg",
+        "description": "Crafted to perfection with flavors that pop and playfulness that entices your tongue, the magic of it all lies in the structure with one seating area where everybody eats together at the same time.",
+        "type": "Lunch",
+        "signatureLogo": "https://github.com/noor-sawaed/epicure-web/blob/00eeb9826288617ba89e30293e2b85586ffc0e92/src/Assets/Vegan.svg?raw=true",
+        "restaurantId": 2
+    },
+    {
+        "id": 7,
+        "name": "Yaffo-Tel Aviv",
+        "price": 13,
+        "image": "https://media.timeout.com/images/105610317/1372/1029/image.jpg",
+        "description": "Crafted to perfection with flavors that pop and playfulness that entices your tongue, the magic of it all lies in the structure with one seating area where everybody eats together at the same time.",
+        "type": "Breakfast",
+        "signatureLogo": "https://github.com/noor-sawaed/epicure-web/blob/00eeb9826288617ba89e30293e2b85586ffc0e92/src/Assets/Vegitarian.svg?raw=true",
+        "restaurantId": 2
+    },
+    {
+        "id": 8,
+        "name": "Shila",
+        "price": 28,
+        "image": "https://media.timeout.com/images/105545433/1372/1029/image.jpg",
+        "description": "It’s all about the fresh seafood served with a side of creativity.",
+        "type": "Lunch",
+        "signatureLogo": "https://github.com/noor-sawaed/epicure-web/blob/00eeb9826288617ba89e30293e2b85586ffc0e92/src/Assets/Spicy.svg?raw=true",
+        "restaurantId": 2
+    },
+    {
+        "id": 9,
+        "name": "Cucina Hiss 4",
+        "price": 20,
+        "image": "https://media.timeout.com/images/105544459/1372/1029/image.jpg",
+        "description": "It’s all about the fresh seafood served with a side of creativity.",
+        "type": "Lunch",
+        "signatureLogo": "https://github.com/noor-sawaed/epicure-web/blob/00eeb9826288617ba89e30293e2b85586ffc0e92/src/Assets/Vegitarian.svg?raw=true",
+        "restaurantId": 2
+    },
+    {
+        "id": 10,
+        "name": "Opa",
+        "price": 39,
+        "image": "https://media.timeout.com/images/105325315/1372/1029/image.jpg",
+        "description": "the way they can be delectably fused and funneled, and equally, how they grace a stunning ceramic plate.",
+        "type": "Lunch",
+        "signatureLogo": "https://github.com/noor-sawaed/epicure-web/blob/00eeb9826288617ba89e30293e2b85586ffc0e92/src/Assets/Vegan.svg?raw=true",
+        "restaurantId": 2
+    },
+    {
+        "id": 11,
+        "name": "Abie",
+        "price": 55,
+        "image": "https://media.timeout.com/images/105544496/1372/1029/image.jpg",
+        "description": "the way they can be delectably fused and funneled, and equally, how they grace a stunning ceramic plate.",
+        "type": "Dinner",
+        "signatureLogo": "https://github.com/noor-sawaed/epicure-web/blob/00eeb9826288617ba89e30293e2b85586ffc0e92/src/Assets/Spicy.svg?raw=true",
+        "restaurantId": 2
+    }
+]

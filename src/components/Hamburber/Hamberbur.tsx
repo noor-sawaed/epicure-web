@@ -6,7 +6,8 @@ import {
   HamburberButton,
   MainHamburberContainer,
   ExitLogoImg,
-  TopHamburberDiv
+  TopHamburberDiv,
+  Linkto
 } from "./HamburberStyles"
 const Hamberbur = (props: any) => {
   return (
@@ -17,8 +18,8 @@ const Hamberbur = (props: any) => {
         onClick={props.closeHamburber}
       />
       <TopHamburberDiv>
-        <HamburberButton>Restaurants</HamburberButton>
-        <HamburberButton>Chefs</HamburberButton>
+        <Linkto to="/restaurants"><HamburberButton>Restaurants</HamburberButton></Linkto>
+        <Linkto to="/chefs"><HamburberButton>Chefs</HamburberButton></Linkto>
       </TopHamburberDiv>
       <BottomHamburberDiv>
         <Footer />

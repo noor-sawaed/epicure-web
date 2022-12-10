@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const MainSignatureDishDiv = styled.div`
@@ -49,6 +50,10 @@ export const LinkToAllDishes = styled.div`
     flex-direction:row;
     justify-content:flex-start;
     margin:20px;
+`;
+export const Linkto = styled(Link)`
+    text-decoration: none;
+    color: #000000;
 `;
 
 export const VectorLogo = styled.img`

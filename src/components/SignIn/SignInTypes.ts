@@ -7,9 +7,25 @@ export const MainSignInContainer = styled.div`
     flex-direction:column;
     justify-content: center;
     gap: 50px;
-    padding:10px;
+    /* padding:10px; */
     margin-bottom: 40px;
+    
 `;
+
+
+export const ExitLogoContainer = styled.div`
+    width: 100%;
+    height:46px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.07);
+`;
+
+
+export const ExitLogo = styled.img`
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+`;
+
 
 export const MainSignInHeader = styled.div`
     display:flex;
@@ -45,6 +61,7 @@ export const MainSignInInputHeader = styled.div`
     display: flex;
     flex-direction:column;
     justify-content:center;
+    align-items:center;
     gap: 60px;
 `;
 
@@ -52,7 +69,7 @@ export const MainSignInInputHeader = styled.div`
 export const SignInInput = styled(TextField)`
     border: none;
     border-bottom: 1px solid #000000;
-    width: 90%;
+    width: calc(100% - 48px);
     font-family: 'Helvetica Neue';
     font-style: normal;
     font-weight: 200;
@@ -62,6 +79,7 @@ export const SignInInput = styled(TextField)`
     color: #000000;
     padding:10px;
     margin: 0 auto;
+    
 `;
 
 export const MainSignInDiv = styled.div`
@@ -91,7 +109,11 @@ export const SignInButton = styled.button`
     letter-spacing: 2.67px;
     text-transform: uppercase;
     color: #FFFFFF;
+    &:disabled {
+    background: gray;
+  }
 `;
+
 
 export const SignInForgotPassword = styled.a`
     font-family: 'Helvetica Neue';

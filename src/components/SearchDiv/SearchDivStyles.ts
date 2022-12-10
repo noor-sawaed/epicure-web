@@ -29,5 +29,6 @@ export const SearchTextInput = styled.input`
     font-size: 12px;
     line-height: 15px;
     letter-spacing: 1.29px;
+    outline: none;
 `;
 

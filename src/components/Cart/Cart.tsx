@@ -2,7 +2,7 @@ import React from "react"
 import cartLogo from "../../Assets/cart.svg"
 import { EmptyCartBigLogo, EmptyCartLabel, MainCartContainer } from "./CartStyles"
 
-const Cart = (props: any) => {
+const Cart = () => {
   return (
     <MainCartContainer>
       <EmptyCartBigLogo src={cartLogo} alt="EmptyCartLogo" />

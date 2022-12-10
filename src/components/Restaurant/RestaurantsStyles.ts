@@ -4,7 +4,6 @@ export const MainRestaurantContainer = styled.div`
     display: flex;
     flex-direction: column;
     margin: 20px 0 0px 20px;
-    width: 335px;
 `;
 
 export const RestaurantWordsContainer = styled.div`

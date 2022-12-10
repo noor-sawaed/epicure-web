@@ -1,13 +1,16 @@
 import searchLogo from "../../Assets/search.svg"
 import { SearchTextBarContainer,SmallSearchLogo,SearchTextInput } from "./SearchDivStyles"
-// import "./SearchDiv.css"
-const SearchDiv = () => {
+const SearchDiv = (props:any) => {
+
+  
   return (
     <SearchTextBarContainer>
         <SmallSearchLogo src={searchLogo} alt="searchlogo" />
         <SearchTextInput
           type="text"
           placeholder="Search for restaurant cuisine, chef"
+          value={props.searchText}
+          onChange={(e)=> {props.setsearch(e.currentTarget.value)}}
         />
       </SearchTextBarContainer>
     )

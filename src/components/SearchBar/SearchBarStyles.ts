@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const MainSearchBarContainer = styled.div`
@@ -44,10 +45,14 @@ export const SearchLabel = styled.h3`
     margin-left: 10vw;
 `
 export const SearchLabelResults = styled.label`
-font-style: normal;
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 1.29px;
     margin-left: 10vw;
 `
+export const LinkTo = styled(Link)`
+    color: #000000;
+    text-decoration: none;
+`;
