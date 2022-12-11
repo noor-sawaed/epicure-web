@@ -19,18 +19,28 @@ const SearchBar = (props: any) => {
   const [filteredDishes, setfilteredDishes] = useState<any>([])
   // const [filteredCusine,setfilteredCusine] = useState<any>()
 
-  useEffect(() => {
+  const resetValues = () => {
     setfilteredRestaurants([])
     setfilteredDishes([])
     // setfilteredCusine([])
+  }
+
+  useEffect(() => {
+    resetValues()
     if (searchText !== "") {
-      restaurants.map((restaurant:any) => {
-        if (restaurant.name.includes(searchText)) setfilteredRestaurants([...filteredRestaurants,restaurant])
+      const TempRest = restaurants.filter((restaurant: any) => {
+        if (restaurant.name.includes(searchText)) {
+          return restaurant
+        }
       })
-      
-      dishes.map((dish) => {
-        if (dish.name.includes(searchText)) setfilteredDishes([...filteredDishes,dish])
+      setfilteredRestaurants(TempRest)
+
+      const TempDish = dishes.filter((dish) => {
+        if (dish.name.includes(searchText)) {
+          return dish
+        }
       })
+      setfilteredDishes(TempDish)
     }
   }, [searchText])
 
@@ -41,28 +51,37 @@ const SearchBar = (props: any) => {
         <SearchTextTitle htmlFor="search">Search</SearchTextTitle>
       </TopSearchHeader>
       <SearchDiv searchText={searchText} setsearch={setsearchText} />
-      <SearchResults>
-        {filteredRestaurants.length !== 0 ? (
-          <SearchLabel>Resturants:</SearchLabel>
-        ) : null}
-        {/* <Link to="/"></Link> */}
-        {filteredRestaurants.map((res: any) => (
-          <LinkTo to={"restaurants/restaurant/" + res?.id}>
-            <SearchLabelResults htmlFor="">{res?.name}</SearchLabelResults>
-          </LinkTo>
-        ))}
-        {filteredDishes.length !== 0 ? (
-          <SearchLabel>Dishes:</SearchLabel>
-        ) : null}
+      {searchText && (
+        <SearchResults>
+          {filteredRestaurants.length !== 0 ? (
+            <SearchLabel>Resturants:</SearchLabel>
+          ) : null}
+          {filteredRestaurants.map((currentRestaurant: any) => (
+            <LinkTo
+              to={"restaurants/restaurant/" + currentRestaurant?.id}
+              state={{ currentRestaurant }}
+            >
+              <SearchLabelResults htmlFor="">
+                {currentRestaurant?.name}
+              </SearchLabelResults>
+            </LinkTo>
+          ))}
+          {filteredDishes.length !== 0 ? (
+            <SearchLabel>Dishes:</SearchLabel>
+          ) : null}
 
-        {filteredDishes.map((dish: any) => (
-          <LinkTo to={"restaurants/restaurant/1/dish/" + dish?.id}>
-            <SearchLabelResults htmlFor="">{dish?.name}</SearchLabelResults>
-          </LinkTo>
-        ))}
-        {/*//TODO with more data should add Cusine filter: <SeardishchLabel>Cusine:</SeardishchLabel> */}
-        {/* <SearchLabelResults htmlFor="">Thai</SearchLabelResults> */}
-      </SearchResults>
+          {filteredDishes.map((dish: any) => (
+            <LinkTo
+              to={"restaurants/restaurant/1/dish/" + dish?.id}
+              state={{ dish }}
+            >
+              <SearchLabelResults htmlFor="">{dish?.name}</SearchLabelResults>
+            </LinkTo>
+          ))}
+          {/*//TODO with more data should add Cusine filter: <SeardishchLabel>Cusine:</SeardishchLabel> */}
+          {/* <SearchLabelResults htmlFor="">Thai</SearchLabelResults> */}
+        </SearchResults>
+      )}
     </MainSearchBarContainer>
   )
 }

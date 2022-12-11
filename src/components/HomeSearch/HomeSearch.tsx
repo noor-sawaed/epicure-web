@@ -59,7 +59,6 @@ const HomeSearch = () => {
         {(filteredRestaurants.length !== 0) ? (
           <SearchLabel>Resturants:</SearchLabel>
         ) : null}
-        {/* <Link to="/"></Link> */}
         {filteredRestaurants.map((currentRestaurant: any) => (
           <LinkTo to={"restaurants/restaurant/" + currentRestaurant?.id} state={{currentRestaurant}}>
             <SearchLabelResults htmlFor="">{currentRestaurant?.name}</SearchLabelResults>

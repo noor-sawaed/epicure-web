@@ -34,6 +34,8 @@ export const SearchResults = styled.div`
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    overflow-y: auto;
+    overflow-x:hidden;
 `
 export const SearchLabel = styled.h3`
     font-style: normal;
