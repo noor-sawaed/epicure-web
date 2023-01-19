@@ -1,4 +1,3 @@
-import restaurants from "../../api/restaurants.json"
 import Restaurant from "../Restaurant/Restaurant"
 import vectorLogo from "../../Assets/Vector.svg"
 import {
@@ -10,7 +9,28 @@ import {
   PopularRestaurantsCollection,
   VectorLogo
 } from "./PopularRestaurantsStyles"
+import { useEffect, useState } from "react"
+import axios from "axios"
 const PopularRestaurants = () => {
+  const [restaurants, setRestaurants] = useState<any>([])
+
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const { data: response } = await axios({
+          method: "get",
+          url: "//localhost:8080/api/restaurants/getPopularRestaurants",
+          params: {}
+        })
+        setRestaurants(response)
+      } catch (error) {
+        console.error(error)
+      }
+    }
+
+    fetchData()
+  },[])
 
   return (
     <MainPopularRestaurantsDiv>
@@ -18,7 +38,7 @@ const PopularRestaurants = () => {
         popular restaurant in epicure:
       </MainPopularRestaurantsHeader>
       <PopularRestaurantsCollection>
-        {restaurants.map((currentRestaurant) => (
+        {restaurants.map((currentRestaurant:any) => (
           <Linkto to={"restaurants/restaurant/"+currentRestaurant.id} state={{ currentRestaurant }}>
             <Restaurant
             name={currentRestaurant.name}
