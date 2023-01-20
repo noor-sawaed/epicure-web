@@ -54,10 +54,15 @@ const Restaurants = () => {
       })
       setFilteredRestaurants([newRes[0], newRes[1], newRes[2]])
     } else if (filter === "popular") {
-      let newRes = restaurants.sort((res: any, res2: any) => {
-        return res2.visits < res.visits ? -1 : 1
-      })
-      setFilteredRestaurants(newRes)
+      const fetchNewRestaurants = async ()=> {
+        let { data: newRes } = await axios({
+          method: "get",
+          url: "//localhost:8080/api/restaurants/getPopularRestaurants",
+          params: {}
+        })
+        setFilteredRestaurants(newRes)
+      }
+      fetchNewRestaurants();
     } else if (filter === "open") {
       const today = moment().format("dddd") // eslint-disable-next-line
       let newRes = restaurants.filter((res: any) => {
