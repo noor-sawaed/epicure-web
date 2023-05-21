@@ -39,7 +39,7 @@ const PopularRestaurants = () => {
       </MainPopularRestaurantsHeader>
       <PopularRestaurantsCollection>
         {restaurants.map((currentRestaurant:any) => (
-          <Linkto to={"restaurants/restaurant/"+currentRestaurant.id} state={{ currentRestaurant }}>
+          <Linkto to={"restaurants/restaurant/"+ currentRestaurant.id} state={{ currentRestaurant }}>
             <Restaurant
             name={currentRestaurant.name}
             image={currentRestaurant.image}

@@ -1,0 +1,221 @@
+
+[
+    {
+        "dishType": "meat",
+        "extras": [
+            {
+                "tasName": "meat rarity",
+                "displayText": "Meat Rarity:",
+                "inputType": "radio",
+                "Options": [
+                    {
+                        "optName": "Rare",
+                        "optId": 1
+                    },
+                    {
+                        "optName": "Medium Rare",
+                        "optId": 2
+                    },
+                    {
+                        "optName": "Medium",
+                        "optId": 3
+                    },
+                    {
+                        "optName": "Medium Well",
+                        "optId": 4
+                    },
+                    {
+                        "optName": "Well Done",
+                        "optId": 5
+                    }
+                ]
+            },
+            {
+                "tasName": "sides",
+                "displayText": "Choose a side",
+                "inputType": "radio",
+                "Options": [
+                    {
+                        "optName": "White Bread",
+                        "optId": 1
+                    },
+                    {
+                        "optName": "Spicy Rice",
+                        "optId": 2
+                    }
+                ]
+            },
+            {
+                "tasName": "changes",
+                "displayText": "Changes",
+                "inputType": "checkbox",
+                "Options": [
+                    {
+                        "optName": "Extra Sauce",
+                        "optId": 1
+                    },
+                    {
+                        "optName": "Extra Seasoning",
+                        "optId": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "dishType": "salad",
+        "extras": [
+            {
+                "tasName": "sides",
+                "displayText": "Choose a side",
+                "inputType": "radio",
+                "Options": [
+                    {
+                        "optName": "Dried Fruit",
+                        "optId": 1
+                    },
+                    {
+                        "optName": "Nuts and Seeds",
+                        "optId": 2
+                    }
+                ]
+            },
+            {
+                "tasName": "changes",
+                "displayText": "Changes",
+                "inputType": "checkbox",
+                "Options": [
+                    {
+                        "optName": "Lettuce",
+                        "optId": 1
+                    },
+                    {
+                        "optName": "Spinach",
+                        "optId": 2
+                    },
+                    {
+                        "optName": "Kale",
+                        "optId": 3
+                    },
+                    {
+                        "optName": "Mixed Greens",
+                        "optId": 4
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "dishType": "seafood",
+        "extras": [
+            {
+                "tasName": "cooking method",
+                "displayText": "Cooking Method:",
+                "inputType": "radio",
+                "Options": [
+                    {
+                        "optName": "Grilled",
+                        "optId": 1
+                    },
+                    {
+                        "optName": "Baked",
+                        "optId": 2
+                    },
+                    {
+                        "optName": "Pan-Fried",
+                        "optId": 3
+                    },
+                    {
+                        "optName": "Steamed",
+                        "optId": 4
+                    }
+                ]
+            },
+            {
+                "tasName": "sides",
+                "displayText": "Choose a side",
+                "inputType": "radio",
+                "Options": [
+                    {
+                        "optName": "Steamed Vegetables",
+                        "optId": 1
+                    },
+                    {
+                        "optName": "Mashed Potatoes",
+                        "optId": 2
+                    }
+                ]
+            },
+            {
+                "tasName": "sauce",
+                "displayText": "Choose a sauce",
+                "inputType": "radio",
+                "Options": [
+                    {
+                        "optName": "Lemon Butter Sauce",
+                        "optId": 1
+                    },
+                    {
+                        "optName": "Garlic Cream Sauce",
+                        "optId": 2
+                    },
+                    {
+                        "optName": "Teriyaki Sauce",
+                        "optId": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "dishType": "pasta",
+        "extras": [
+            {
+                "tasName": "sauce",
+                "displayText": "Choose a sauce",
+                "inputType": "radio",
+                "Options": [
+                    {
+                        "optName": "Marinara Sauce",
+                        "optId": 1
+                    },
+                    {
+                        "optName": "Alfredo Sauce",
+                        "optId": 2
+                    },
+                    {
+                        "optName": "Pesto Sauce",
+                        "optId": 3
+                    },
+                    {
+                        "optName": "Carbonara Sauce",
+                        "optId": 4
+                    }
+                ]
+            },
+            {
+                "tasName": "toppings",
+                "displayText": "Choose toppings",
+                "inputType": "checkbox",
+                "Options": [
+                    {
+                        "optName": "Parmesan Cheese",
+                        "optId": 1
+                    },
+                    {
+                        "optName": "Basil",
+                        "optId": 2
+                    },
+                    {
+                        "optName": "Mushrooms",
+                        "optId": 3
+                    },
+                    {
+                        "optName": "Tomatoes",
+                        "optId": 4
+                    }
+                ]
+            }
+        ]
+    }
+]

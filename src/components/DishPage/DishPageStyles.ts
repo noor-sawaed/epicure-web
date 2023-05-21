@@ -55,6 +55,8 @@ export const MainDishTextContainer = styled.div`
 export const SelectContainer = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+
 `;
 
 export const SmallHeaderContainer = styled.label`
@@ -65,7 +67,7 @@ export const SmallHeaderContainer = styled.label`
     line-height: 18px;
     text-align: center;
     letter-spacing: 1.97px;
-    color: #000000;
+    color: black;
     border-bottom: 1px solid rgba(222, 146, 0, 0.9);
     width: fit-content;
 `;
@@ -83,9 +85,9 @@ export const FormControlLabelEdited = styled(FormControlLabel)`
 
 export const OptionsList = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column; 
     padding:10px;
-    gap:10px;
+    gap:20px;
 `;
 
 export const OptLabel = styled.label`
@@ -99,10 +101,47 @@ export const OptLabel = styled.label`
     color: #000000;
 `;
 
+export const OpSingle = styled.div`
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+`;
+
 export const LinkTo = styled(Link)`
     text-decoration: none;
 `;
 
 export const OptInput = styled.input`
 
+`;
+
+export const OptQuantityBtn = styled.button`
+    color: black;
+    background-color: white;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1.97px;
+    border: none;
+`;
+
+export const AddToBagBtn = styled.button`
+    margin-top: 10px;
+    width: fit-content;
+    padding: 10px;
+    height: fit-content;
+    background-color: black;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height, or 111% */
+    text-align: center;
+    letter-spacing: 2.67px;
+    text-transform: uppercase;
+    color: #FFFFFF;
 `;
