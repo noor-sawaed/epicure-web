@@ -41,7 +41,7 @@ const ChefOfTheWeek = () => {
         };
         let { data: newRes } = await axios({
           method: "get",
-          url: "//localhost:8080/api/dishes/getDishesByRestaurantID",
+          url: "//us-central1-epicure-5a13c.cloudfunctions.net/app/api/dishes/getDishesByRestaurantID",
           headers: {
             "Content-Type": "application/json"
           },

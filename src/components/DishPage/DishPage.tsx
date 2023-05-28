@@ -36,7 +36,7 @@ const DishPage = () => {
       try {
         const { data: response } = await axios({
           method: "get",
-          url: "//localhost:8080/api/dishes/getDish",
+          url: "//us-central1-epicure-5a13c.cloudfunctions.net/app/api/dishes/getDish",
           params: { dishID: mainDish.id }
         })
         setMainDish(response) //!from database

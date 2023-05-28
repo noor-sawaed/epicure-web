@@ -33,7 +33,7 @@ const Restaurants = () => {
       try {
         const { data: response } = await axios({
           method: "get",
-          url: "//localhost:8080/api/restaurants/getRestaurants",
+          url: "//us-central1-epicure-5a13c.cloudfunctions.net/app/api/restaurants/getRestaurants",
           params: {}
         })
         setRestaurants(response)
@@ -57,7 +57,7 @@ const Restaurants = () => {
       const fetchNewRestaurants = async ()=> {
         let { data: newRes } = await axios({
           method: "get",
-          url: "//localhost:8080/api/restaurants/getPopularRestaurants",
+          url: "//us-central1-epicure-5a13c.cloudfunctions.net/app/api/restaurants/getPopularRestaurants",
           params: {}
         })
         setFilteredRestaurants(newRes)
